@@ -52,10 +52,10 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-family: $pt-mono;
-  color: #666666;
+  color: $grey;
   font-style: normal;
 
-  background-color: #182044;
+  background-color: $light-bg;
 }
 
 img {

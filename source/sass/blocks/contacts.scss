@@ -1,0 +1,31 @@
+.contacts {
+    @include nolist;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contacts__item {
+  position: relative;
+  padding-left: 40px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+}
+
+.contacts__item a {
+  color: $white;
+}
+
+

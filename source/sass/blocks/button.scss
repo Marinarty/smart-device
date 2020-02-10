@@ -1,5 +1,5 @@
 .button {
-  padding: 10px 15px;
+  padding: 13px 15px;
 
   font-family: $roboto-cond;
   font-weight: bold;
@@ -16,7 +16,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $blue;
 
     background-color: $blue;
@@ -24,11 +25,14 @@
 }
 
 .button--white {
+  width: 180px;
+
   color: $white;
 
   border: 1px solid $white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $dark-bg;
 
     background-color: $white;

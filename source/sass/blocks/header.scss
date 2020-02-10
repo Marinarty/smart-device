@@ -7,9 +7,34 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 30px 10px 20px 20px;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.8;
+}
+
+.header__logo--cut {
+  display: none;
 }
 
 .header__contacts {
   width: 70%;
+}
+
+@media (max-width: $tablet-width) {
+  .header__container {
+    padding: 20px 25px 20px 25px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header__logo--full {
+    display: none;
+  }
+
+  .header__logo--cut {
+    display: block;
+  }
 }

@@ -1,0 +1,24 @@
+.social {
+  @include nolist;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item svg path:hover,
+.social__item svg path:focus {
+  fill: $blue;
+}
+
+.social__item svg path:active {
+  fill: $blue;
+  opacity: 0.5;
+}

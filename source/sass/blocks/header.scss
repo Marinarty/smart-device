@@ -1,5 +1,7 @@
 .header {
-  background-color: $dark-bg;
+  // background-color: $dark-bg;
+  position: relative;
+  z-index: 10;
 }
 
 .header__container {
@@ -36,5 +38,10 @@
 
   .header__logo--cut {
     display: block;
+  }
+
+  .header__logo--cut svg {
+    width: 38px;
+    height: 38px;
   }
 }

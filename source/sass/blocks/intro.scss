@@ -1,0 +1,244 @@
+.intro {
+  margin-top: -110px;
+
+  background-color: $dark-bg;
+  background-image:
+    url("../img/circuit-desktop@1x.png"),
+    url("../img/triangles.svg"),
+    url("../img/main-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right 158px top 258px, top 5px right -10px, center top;
+  background-size: auto, 1920px 881px, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/circuit-desktop@2x.png"),
+      url("../img/triangles.svg"),
+      url("../img/main-bg-desktop@2x.png");
+    background-position: right 158px top 258px, top 5px right -10px, center top;
+    background-size: 705px 515px, 1920px 881px, 1920px 886px;
+  }
+}
+
+.intro__container {
+  padding: 320px 20px 130px 20px;
+}
+
+.intro__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: $roboto-cond;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.intro__tag-line {
+  max-width: 50%;
+  display: block;
+  position: relative;
+  padding-left: 95px;
+  margin-bottom: 45px;
+
+  font-family: $pt-mono;
+  color: $white;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    left: 0;
+    top: 16px;
+
+    background: $white;
+  }
+}
+
+.intro__button {
+  display: block;
+  width: 407px;
+  margin-left: 95px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 130px;
+
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: $white;
+
+  background-color: $blue;
+  border: 1px solid $blue;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    border: 1px solid $white;
+    background-color: $dark-bg;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.intro__button span {
+  margin: 0 auto;
+}
+
+.intro__button-text--cut {
+  display: none;
+}
+
+.intro__scroll {
+  display: inline-block;
+  margin-left: -35px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.5;
+
+  transform: rotate(-90deg);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .intro {
+    background-image:
+      url("../img/circuit-tablet@1x.png"),
+      url("../img/triangles.svg"),
+      url("../img/main-bg-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right -204px top 124px, top -217px right -362px, center top;
+    background-size: auto, 1488px 881px, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/circuit-tablet@2x.png"),
+        url("../img/triangles.svg"),
+        url("../img/main-bg-tablet@2x.jpg");
+      background-position: right -204px top 124px, top -217px right -362px, center top;
+      background-size: 465px 340px, 1488px 881px, cover;
+    }
+  }
+
+  .intro__scroll {
+    display: none;
+  }
+
+  .intro__title {
+    max-width: 50%;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+    margin-bottom: 30px;
+  }
+
+  .intro__tag-line {
+    max-width: 78%;
+    padding-left: 50px;
+    margin-bottom: 57px;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      width: 33px;
+      left: 0;
+      top: 15px;
+    }
+  }
+
+  .intro__button {
+    width: 380px;
+    margin-left: 50px;
+  }
+
+  .intro__block {
+    width: 70%;
+    margin-left: 67px;
+  }
+
+  .intro__container {
+    padding: 200px 20px 34px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .intro {
+    background-image:
+      url("../img/circuit-mobile@1x.png"),
+      url("../img/triangles.svg"),
+      url("../img/main-bg-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right 100px top 107px, top -103px right -391px, center top;
+    background-size: auto, 1400px, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/circuit-mobile@2x.png"),
+        url("../img/triangles.svg"),
+        url("../img/main-bg-mobile@2x.jpg");
+      background-position: right 100px top 107px, top -103px right -391px, center top;
+      background-size: 301px 220px, 1400px, cover;
+    }
+  }
+
+  .intro__title {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+  }
+
+  .intro__block,
+  .intro__tag-line {
+    width: 100%;
+  }
+
+  .intro__block {
+    margin-left: 0;
+  }
+
+  .intro__button {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .intro__button-text--cut {
+    display: block;
+  }
+
+  .intro__button-text--full {
+    display: none;
+  }
+
+  .intro__container {
+    padding: 312px 20px 70px 20px;
+  }
+
+  .intro__tag-line {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+}

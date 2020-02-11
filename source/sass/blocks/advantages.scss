@@ -1,5 +1,5 @@
 .advantages__container {
-  padding: 107px 142px;
+  padding: 107px 142px 35px 142px;
 }
 
 .advantages__list {
@@ -62,7 +62,7 @@
 
 @media (max-width: $tablet-width) {
   .advantages__container {
-    padding: 54px 20px;
+    padding: 54px 20px 5px 20px;
   }
 
   .advantages__item {

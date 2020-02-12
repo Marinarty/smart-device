@@ -1,0 +1,58 @@
+.form input[type="text"],
+.form input[type="tel"],
+.form textarea {
+  padding: 17px;
+
+  color: $white;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &::placeholder {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.form__checkbox {
+  position: relative;
+  padding-left: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.form__checkbox input[type="checkbox"] + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.4;
+  border: 1px solid $white;
+}
+
+.form__checkbox input[type="checkbox"]:checked + span {
+  opacity: 1;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 6px;
+}
+
+.form__checkbox input[type="checkbox"]:hover + span,
+.form__checkbox input[type="checkbox"]:focus + span {
+  opacity: 1;
+}

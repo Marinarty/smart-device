@@ -46,3 +46,20 @@
     opacity: 0.5;
   }
 }
+
+.button--form {
+  color: $white;
+
+  border: 1px solid $white;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+
+    background-color: $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

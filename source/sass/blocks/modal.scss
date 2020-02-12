@@ -1,0 +1,95 @@
+.modal {
+  display: none;
+}
+
+.modal--show {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__container {
+  padding: 20px 40px 35px;
+  position: relative;
+  width: 490px;
+
+  color: $white;
+  background-color: $blue;
+}
+
+.modal__title {
+  font-family: $roboto-cond;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.modal__text {
+  width: 90%;
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.modal__form input {
+  margin-bottom: 30px;
+}
+
+.modal__form textarea {
+  margin-bottom: 30px;
+}
+
+.modal__form label,
+.modal__form button {
+  width: 100%;
+}
+
+.modal__form button {
+  margin-bottom: 30px;
+}
+
+.modal__close {
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+
+  background-color: $blue;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container {
+    padding: 40px 40px 40px;
+    position: relative;
+    width: 320px;
+
+    color: $white;
+    background-color: $blue;
+  }
+}

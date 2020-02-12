@@ -1,0 +1,21 @@
+.wrapper {
+  background-color: $light-bg;
+  background-image: url("../img/triangles-bg.svg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .wrapper {
+    background-image: url("../img/triangles-bg.svg");
+    background-position: cover;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .wrapper {
+    background-image: url("../img/triangles-bg.svg");
+    background-position: cover;
+  }
+}

@@ -56,3 +56,7 @@
 .form__checkbox input[type="checkbox"]:focus + span {
   opacity: 1;
 }
+
+.form__checkbox--modal {
+  padding-left: 50px;
+}

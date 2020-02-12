@@ -1,5 +1,5 @@
 .about__container {
-  padding: 0 142px 50px 320px;
+  padding: 0 142px 115px 327px;
 
   background-image: url("../img/bg-about-desktop@1x.png");
   background-repeat: no-repeat;
@@ -13,6 +13,8 @@
 }
 
 .about__title {
+  margin-bottom: 20px;
+
   font-family: $roboto-cond;
   font-size: 36px;
   line-height: 51px;

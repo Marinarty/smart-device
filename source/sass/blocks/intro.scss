@@ -190,7 +190,7 @@
       url("../img/triangles.svg"),
       url("../img/main-bg-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: right 100px top 107px, top -103px right -391px, center top;
+    background-position: center top 107px, top -103px right -391px, center top;
     background-size: auto, 1400px, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -198,7 +198,7 @@
         url("../img/circuit-mobile@2x.png"),
         url("../img/triangles.svg"),
         url("../img/main-bg-mobile@2x.jpg");
-      background-position: right 100px top 107px, top -103px right -391px, center top;
+      background-position: center top 107px, top -103px right -391px, center top;
       background-size: 301px 220px, 1400px, cover;
     }
   }

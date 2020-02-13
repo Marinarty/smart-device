@@ -254,6 +254,8 @@
     background-image: url("../img/more.svg");
     background-repeat: no-repeat;
     background-position: right center;
+    border: none;
+    outline: none;
 
     cursor: pointer;
 
@@ -268,6 +270,7 @@
 
   .footer__toggle--close {
     background-image: url("../img/less.svg");
+    border: none;
   }
 
   .footer__contacts-list--open {

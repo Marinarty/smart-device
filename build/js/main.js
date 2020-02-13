@@ -13,22 +13,60 @@ var popup = document.querySelector('.modal');
 var close = popup.querySelector('.modal__close');
 
 
-togglePages.onclick = function () {
+// togglePages.onclick = function () {
+//   nav.classList.toggle('footer__nav--open');
+//   togglePages.classList.toggle('footer__toggle--close');
+// };
+
+// toggleContacts.onclick = function () {
+//   contacts.classList.toggle('footer__contacts-list--open');
+//   toggleContacts.classList.toggle('footer__toggle--close');
+// };
+
+
+
+var swipePages = function () {
   nav.classList.toggle('footer__nav--open');
   togglePages.classList.toggle('footer__toggle--close');
 };
 
-toggleContacts.onclick = function () {
+var swipeContacts = function () {
   contacts.classList.toggle('footer__contacts-list--open');
   toggleContacts.classList.toggle('footer__toggle--close');
 };
 
+
+togglePages.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  if (contacts.classList.contains('footer__contacts-list--open')) {
+    swipeContacts();
+  }
+  swipePages();
+});
+
+
+toggleContacts.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  if (nav.classList.contains('footer__nav--open')) {
+    swipePages();
+  }
+  swipeContacts();
+});
+
+
+
+
+
+
+
 var openPopup = function () {
   popup.classList.add('modal--show');
+  document.body.classList.add('scroll-disabled');
 };
 
 var closePopup = function () {
   popup.classList.remove('modal--show');
+  document.body.classList.remove('scroll-disabled');
 };
 
 callbackButton.addEventListener('click', function (evt) {

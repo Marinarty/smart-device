@@ -78,6 +78,7 @@
 
   background-color: $blue;
   border: 1px solid $blue;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -190,7 +191,7 @@
       url("../img/triangles.svg"),
       url("../img/main-bg-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center top 107px, top -103px right -391px, center top;
+    background-position: right -10px top 120px, top -103px right -485px, center top;
     background-size: auto, 1400px, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -198,7 +199,7 @@
         url("../img/circuit-mobile@2x.png"),
         url("../img/triangles.svg"),
         url("../img/main-bg-mobile@2x.jpg");
-      background-position: center top 107px, top -103px right -391px, center top;
+      background-position: right -10px top 120px, top -103px right -485px, center top;
       background-size: 301px 220px, 1400px, cover;
     }
   }
@@ -233,12 +234,12 @@
   }
 
   .intro__container {
-    padding: 312px 20px 70px 20px;
+    padding: 312px 15px 80px;
   }
 
   .intro__tag-line {
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 14px;
   }
 }

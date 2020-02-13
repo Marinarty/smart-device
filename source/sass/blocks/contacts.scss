@@ -54,6 +54,7 @@
   .contacts__item a {
     font-size: 0;
     margin-right: 0;
+    padding-left: 40px;
 
     &::before {
       top: -20px;
@@ -67,11 +68,11 @@
   }
 
   .contacts__item--phone {
-    margin-right: 0;
+    margin-right: -30px;
     padding: 0;
   }
 
   .contacts__item--mail {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }

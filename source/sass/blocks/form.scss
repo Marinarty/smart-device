@@ -7,6 +7,7 @@
   outline: none;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
 
   &::placeholder {
     color: $white;
@@ -34,6 +35,11 @@
   }
 }
 
+.form input[type="checkbox"] {
+  top: 4px;
+  left: 2px;
+}
+
 .form__checkbox input[type="checkbox"] + span {
   position: absolute;
   top: 0;
@@ -43,6 +49,7 @@
 
   opacity: 0.4;
   border: 1px solid $white;
+  border-radius: 0;
 }
 
 .form__checkbox input[type="checkbox"]:checked + span {
@@ -60,4 +67,11 @@
 
 .form__checkbox--modal {
   padding-left: 50px;
+  margin-left: 0;
+}
+
+@media (max-width: $mobile-width) {
+  .form__checkbox {
+    margin-left: 0;
+  }
 }

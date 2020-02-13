@@ -1,5 +1,4 @@
 .header {
-  // background-color: $dark-bg;
   position: relative;
   z-index: 10;
 }
@@ -11,11 +10,6 @@
   align-items: center;
   padding: 30px 20px 20px 20px;
 }
-
-// .header__logo:hover,
-// .header__logo:focus {
-//   opacity: 0.8;
-// }
 
 .header__logo--cut {
   display: none;
@@ -32,6 +26,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .header__container {
+    padding: 20px 30px 20px 17px;
+  }
+
   .header__logo--full {
     display: none;
   }

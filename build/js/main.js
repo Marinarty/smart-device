@@ -12,19 +12,6 @@ var callbackButton = document.querySelector('.header .button');
 var popup = document.querySelector('.modal');
 var close = popup.querySelector('.modal__close');
 
-
-// togglePages.onclick = function () {
-//   nav.classList.toggle('footer__nav--open');
-//   togglePages.classList.toggle('footer__toggle--close');
-// };
-
-// toggleContacts.onclick = function () {
-//   contacts.classList.toggle('footer__contacts-list--open');
-//   toggleContacts.classList.toggle('footer__toggle--close');
-// };
-
-
-
 var swipePages = function () {
   nav.classList.toggle('footer__nav--open');
   togglePages.classList.toggle('footer__toggle--close');
@@ -52,12 +39,6 @@ toggleContacts.addEventListener('click', function (evt) {
   }
   swipeContacts();
 });
-
-
-
-
-
-
 
 var openPopup = function () {
   popup.classList.add('modal--show');

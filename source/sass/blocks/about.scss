@@ -41,7 +41,7 @@
 
 @media (max-width: $tablet-width) {
   .about__container {
-    padding: 0 25px 50px 190px;
+    padding: 0 25px 25px 211px;
 
     background-image: url("../img/bg-about-tablet@1x.png");
     background-position: left -5px top 0;
@@ -61,7 +61,7 @@
 
 @media (max-width: $mobile-width) {
   .about__container {
-    padding: 0 20px 50px 20px;
+    padding: 0 5px 60px 20px;
 
     background-image: none;
   }
@@ -72,6 +72,14 @@
   }
 
   .about__first-paragraph {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+  }
+
+  .about__second-paragraph {
+    margin-bottom: 30px;
+  }
+
+  .about__second-paragraph span {
+    display: none;
   }
 }

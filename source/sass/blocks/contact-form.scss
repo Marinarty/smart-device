@@ -71,8 +71,16 @@
     background-image: none;
   }
 
+  .contact-form__text {
+    margin-bottom: 54px;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 52px;
+  }
+
   .contact-form__container {
-    padding: 100px 80px 115px 80px;
+    padding: 78px 70px 106px 87px;
   }
 
   .contact-form__title {
@@ -87,7 +95,7 @@
 
 @media (max-width: $mobile-width) {
   .contact-form__container {
-    padding: 30px 20px 40px 20px;
+    padding: 30px 10px 40px 12px;
   }
 
   .contact-form input {
@@ -96,7 +104,8 @@
   }
 
   .contact-form textarea {
-    margin-bottom: 30px;
+    height: 100px;
+    margin-bottom: 35px;
   }
 
   .contact-form label,
@@ -106,5 +115,14 @@
 
   .contact-form button {
     margin-bottom: 30px;
+  }
+
+  .contact-form__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .contact-form__text {
+    margin-bottom: 25px;
   }
 }

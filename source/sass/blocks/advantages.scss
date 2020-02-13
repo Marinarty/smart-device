@@ -82,12 +82,22 @@
 }
 
 @media (max-width: $mobile-width) {
+  .advantages__container {
+    padding: 29px 15px 5px;
+  }
+
   .advantages__list {
     flex-direction: column;
   }
 
   .advantages__item {
     width: 100%;
+    padding: 23px 20px 27px 20px;
+    margin-bottom: 20px;
+  }
+
+  .advantages__item--vendor {
+    padding: 23px 5px 27px 20px;
   }
 
   .advantages__title {
@@ -96,7 +106,7 @@
   }
 
   .advantages__item svg {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 }

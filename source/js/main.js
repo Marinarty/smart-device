@@ -74,3 +74,14 @@ popup.addEventListener('click', function (evt) {
     closePopup();
   }
 });
+
+
+var element = document.getElementById('phone');
+var elementContact = document.getElementById('contact-form-phone');
+var maskOptions = {
+  mask: '+7(000)000-00-00',
+  lazy: false
+}
+
+var mask = new IMask(element, maskOptions);
+var maskContact = new IMask(elementContact, maskOptions);

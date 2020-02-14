@@ -176,12 +176,13 @@
 
 @media (max-width: $mobile-width) {
   .services__container {
-    padding: 30px 10px 60px 23px;
+    padding: 30px 15px 60px 15px;
   }
 
   .services__title {
     width: 100%;
     margin-bottom: 40px;
+    padding-left: 10px;
 
     font-size: 28px;
     line-height: 39px;

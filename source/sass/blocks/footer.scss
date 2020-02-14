@@ -159,6 +159,10 @@
     padding: 30px 25px;
   }
 
+  .footer__contacts-list span {
+    letter-spacing: -0.2px;
+  }
+
   .footer__years {
     display: flex;
 
@@ -180,7 +184,9 @@
   }
 
   .footer__nav {
+    display: flex;
     flex-direction: column;
+    column-count: 1;
   }
 
   .footer__nav-item--about {
